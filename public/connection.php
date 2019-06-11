@@ -6,7 +6,7 @@ print_r($_FILES);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_FILES['files'])) {
         $errors = [];
-        $path = 'uploads/';
+        $path = 'C:\Users\jonti\Desktop\IOT\IOT\uploads/';
 	$extensions = ['jpg', 'jpeg', 'png', 'gif', 'mpp', 'vsdx', 'docx', 'pptx'];
 
         $all_files = count($_FILES['files']['tmp_name']);
