@@ -6,4 +6,4 @@ $client = new MongoDBClient(
 
 //connect to database
 
-$db = $client->test;
+$dbs = $mongo->listDatabases();
