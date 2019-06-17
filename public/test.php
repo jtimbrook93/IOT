@@ -19,4 +19,3 @@
 
    $collection->insert($document);
    echo "Document inserted successfully";
-}
