@@ -1,26 +1,22 @@
 <?php
+   // connect to mongodb
+   $m = new MongoClient();
+   echo "Connection to database successfully";
 
-// connect
-$m = new MongoClient('mongodb+srv://Jtimbrook93:Biggi1%21yo@iot-sjtus.mongodb.net/test?retryWrites=true&w=majority');
+   // select a database
+   $db = $m->admin;
+   echo "Database admin selected";
+   $collection = $db->IOT;
+   echo "Collection selected succsessfully";
 
-// select a database
-$db = $m->local;
+   $document = array(
+      "title" => "MongoDB",
+      "description" => "database",
+      "likes" => 100,
+      "url" => "http://www.tutorialspoint.com/mongodb/",
+      "by" => "tutorials point"
+   );
 
-// select a collection (analogous to a relational database's table)
-$collection = $db->cartoons;
-
-// add a record
-$document = array( "title" => "Calvin and Hobbes", "author" => "Bill Watterson" );
-$collection->insert($document);
-
-// add another record, with a different "shape"
-$document = array( "title" => "XKCD", "online" => true );
-$collection->insert($document);
-
-// find everything in the collection
-$cursor = $collection->find();
-
-// iterate through the results
-foreach ($cursor as $document) {
-    echo $document["title"] . "\n";
+   $collection->insert($document);
+   echo "Document inserted successfully";
 }
