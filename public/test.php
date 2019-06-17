@@ -2,11 +2,13 @@
 
    require '/var/www/html/vendor/autoload.php';
    // connect to mongodb
-   $m = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+ $client = new MongoDB\Client(
+     ‘mongodb+srv://Jtimbrook93:Biggi1%21yo@iot-sjtus.mongodb.net/test?retryWrites=true&w=majority’);
+
    echo "Connection to database successfully";
 
    // select a database
-   $db = $m->admin;
+   $db = $client->admin;
    echo "Database admin selected";
    $collection = $db->IOT;
    echo "Collection selected succsessfully";
