@@ -1,6 +1,6 @@
 <?php
 
-$PATH = "C:\php_mongodb\mongodb-linux-x86_64-amazon-4.0.10/bin";
+$PATH = "C:\php_mongodb\mongodb-linux-x86_64-amazon-4.0.10\bin";
 
  require '/home/ec2-user/vendor/autoload.php';
    // connect to mongodb
