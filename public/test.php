@@ -19,7 +19,7 @@ $PATH = "/usr/bin";
  }
 
  //Manager Class
- $connection = new MongoDB\Driver\Manager("mongodb://${user}:${pwd}@iot-sjtus.mongodb.net/JT?retryWrites=true&w=majority");
+ $connection = new MongoDB\Driver\Manager("mongodb://${user}:${pwd}@iot-sjtus.mongodb.net/test?retryWrites=true&w=majority");
 
  // Query Class
  $query = new MongoDB\Driver\Query($filter);
