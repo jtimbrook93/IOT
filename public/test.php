@@ -1,4 +1,5 @@
 <?php
+
 chdir(__DIR__);
 set_include_path (__DIR__);
 
@@ -22,6 +23,7 @@ set_include_path (__DIR__);
       "url" => "http://www.tutorialspoint.com/mongodb/",
       "by" => "tutorials point"
    );
+   vardump($db $collection $client)
 
    $collection->insert($document);
    echo "Document inserted successfully";
