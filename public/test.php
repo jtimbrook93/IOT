@@ -31,21 +31,21 @@ $PATH = "/usr/bin";
  $rowsArr = $rows->toArray();
  echo json_encode($rowsArr);
 
-   echo "Connection to database successfully";
-
-   // select a database
-   $db = $client->JT;
-   echo "Database admin selected";
-   $collection = $db->IOT;
-   echo "Collection selected succsessfully";
-
-   $document = array(
-      "title" => "MongoDB",
-      "description" => "database",
-      "likes" => 100,
-      "url" => "http://www.tutorialspoint.com/mongodb/",
-      "by" => "tutorials point"
-   );
-
-   $collection->insert($document);
-   echo "Document inserted successfully";
+   // echo "Connection to database successfully";
+   //
+   // // select a database
+   // $db = $client->JT;
+   // echo "Database admin selected";
+   // $collection = $db->IOT;
+   // echo "Collection selected succsessfully";
+   //
+   // $document = array(
+   //    "title" => "MongoDB",
+   //    "description" => "database",
+   //    "likes" => 100,
+   //    "url" => "http://www.tutorialspoint.com/mongodb/",
+   //    "by" => "tutorials point"
+   // );
+   //
+   // $collection->insert($document);
+   // echo "Document inserted successfully";
