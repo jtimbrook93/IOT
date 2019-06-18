@@ -23,7 +23,6 @@ set_include_path (__DIR__);
       "url" => "http://www.tutorialspoint.com/mongodb/",
       "by" => "tutorials point"
    );
-   vardump($db, $collection, $clien)
 
    $collection->insert($document);
    echo "Document inserted successfully";
