@@ -2,7 +2,7 @@
 
 $PATH = "C:\php_mongodb\mongodb-linux-x86_64-amazon-4.0.10\bin";
 
- require '/home/ec2-user/vendor/autoload.php';
+ require "/vendor/autoload.php';
    // connect to mongodb
  $client = new MongoDB\Driver\Manager("mongodb+srv://Jtimbrook93:Biggi1%21yo@iot-sjtus.mongodb.net/JT?retryWrites=true&w=majority");
 
