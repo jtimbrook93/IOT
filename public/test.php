@@ -2,8 +2,8 @@
 
    require '/var/www/html/vendor/autoload.php';
    // connect to mongodb
- $client = new MongoDB\driver\Manager("mongodb+srv://Jtimbrook93:Biggi1%21yo@iot-sjtus.mongodb.net/admin?retryWrites=true&w=majority");
-
+ $client = new MongoDB\Driver\Manager("mongodb+srv://Jtimbrook93:Biggi1%21yo@iot-sjtus.mongodb.net/admin?retryWrites=true&w=majority");
+var_dump($manager);
 
    echo "Connection to database successfully";
 
