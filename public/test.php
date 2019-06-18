@@ -1,9 +1,11 @@
 <?php
+chdir(__DIR__);
+set_include_path (__DIR__);
 
    require '/var/www/html/vendor/autoload.php';
    // connect to mongodb
  $client = new MongoDB\Driver\Manager("mongodb+srv://Jtimbrook93:Biggi1%21yo@iot-sjtus.mongodb.net/admin?retryWrites=true&w=majority");
-var_dump($client);
+
 
    echo "Connection to database successfully";
 
