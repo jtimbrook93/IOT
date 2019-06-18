@@ -1,7 +1,6 @@
 <?php
 
-chdir(__DIR__);
-set_include_path (__DIR__);
+$PATH = "C:\php_mongodb\mongodb-linux-x86_64-amazon-4.0.10/bin"
 
    require '/var/www/html/vendor/autoload.php';
    // connect to mongodb
