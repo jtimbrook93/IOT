@@ -1,8 +1,8 @@
 <?php
 
-$PATH = "C:\php_mongodb\mongodb-linux-x86_64-amazon-4.0.10/bin"
+$PATH = "C:\php_mongodb\mongodb-linux-x86_64-amazon-4.0.10/bin";
 
-   public function require '/var/www/html/vendor/autoload.php';
+ require '/var/www/html/vendor/autoload.php';
    // connect to mongodb
  $client = new MongoDB\Driver\Manager("mongodb+srv://Jtimbrook93:Biggi1%21yo@iot-sjtus.mongodb.net/JT?retryWrites=true&w=majority");
 
