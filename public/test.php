@@ -21,7 +21,7 @@ require_once '/var/www/html/vendor/autoload.php';
  }
 
  //Manager Class
- $connection = new MongoDB\Driver\Manager(mongodb+srv://${user}:${pwd}@iot-sjtus.mongodb.net/test?retryWrites=true&w=majority);
+ $connection = new MongoDB\Driver\Manager('mongodb+srv://${user}:${pwd}@iot-sjtus.mongodb.net/test?retryWrites=true&w=majority');
 
 
    echo "Connection to database successfully";
