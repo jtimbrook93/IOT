@@ -19,33 +19,33 @@ $PATH = "/usr/bin";
  }
 
  //Manager Class
- $connection = new MongoDB\Driver\Manager("mongodb://${user}:${pwd}@iot-sjtus.mongodb.net/test?retryWrites=true&w=majority");
+ $connection = new MongoDBClient("mongodb://${user}:${pwd}@iot-sjtus.mongodb.net/JT?retryWrites=true&w=majority");
 
- // Query Class
- $query = new MongoDB\Driver\Query($filter);
+ // // Query Class
+ // $query = new MongoDB\Driver\Query($filter);
+ //
+ // // Output of the executeQuery will be object of MongoDB\Driver\Cursor class
+ // $rows = $connection->executeQuery('sedwe.defaultConfig', $query);
+ //
+ // // Convert rows to Array and sedn result back to client
+ // $rowsArr = $rows->toArray();
+ // echo json_encode($rowsArr);
 
- // Output of the executeQuery will be object of MongoDB\Driver\Cursor class
- $rows = $connection->executeQuery('sedwe.defaultConfig', $query);
+   echo "Connection to database successfully";
 
- // Convert rows to Array and sedn result back to client
- $rowsArr = $rows->toArray();
- echo json_encode($rowsArr);
+   // select a database
+   $db = $connection->JT;
+   echo "Database admin selected";
+   $collection = $db->IOT;
+   echo "Collection selected succsessfully";
 
-   // echo "Connection to database successfully";
-   //
-   // // select a database
-   // $db = $client->JT;
-   // echo "Database admin selected";
-   // $collection = $db->IOT;
-   // echo "Collection selected succsessfully";
-   //
-   // $document = array(
-   //    "title" => "MongoDB",
-   //    "description" => "database",
-   //    "likes" => 100,
-   //    "url" => "http://www.tutorialspoint.com/mongodb/",
-   //    "by" => "tutorials point"
-   // );
-   //
-   // $collection->insert($document);
-   // echo "Document inserted successfully";
+   $document = array(
+      "title" => "MongoDB",
+      "description" => "database",
+      "likes" => 100,
+      "url" => "http://www.tutorialspoint.com/mongodb/",
+      "by" => "tutorials point"
+   );
+
+   $collection->insert($document);
+   echo "Document inserted successfully";
