@@ -4,7 +4,7 @@
 
 
 // chdir(__DIR__);
-set_include_path ('/usr/lib64:/usr/lib:/etc/bin:/usr/bin:/sbin:/usr/sbin:/bin:/usr/bin');
+set_include_path ("/usr/lib64:/usr/lib:/etc/bin:/usr/bin:/sbin:/usr/sbin:/bin:/usr/bin");
 
 $PATH = "/var/www/html/vendor/aws";
 
