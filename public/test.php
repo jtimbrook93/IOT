@@ -19,7 +19,7 @@ $PATH = "/usr/bin";
  }
 
  //Manager Class
- $manager = new MongoDB\Driver\Manager("mongodb://${user}:${pwd}@iot-sjtus.mongodb.net/test?retryWrites=true&w=majority");
+ $manager = new MongoDB\Driver\Manager("mongodb://${user}:${pwd}@iot-iot-shard-00-00-sjtus.mongodb.net:27017,iot-shard-00-01-sjtus.mongodb.net:27017,iot-shard-00-02-sjtus.mongodb.net:27017/test?ssl=true&replicaSet=IOT-shard-0&authSource=admin&retryWrites=true&w=majority");
 
  // Query Class
  $query = new MongoDB\Driver\Query($manager);
