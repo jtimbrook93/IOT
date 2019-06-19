@@ -5,7 +5,7 @@
 chdir(__DIR__);
 set_include_path (__DIR__);
 
-$PATH = "/var/www/html/vendor/mongodb/mongodb/";
+$PATH = "/var/www/html/vendor/aws";
 
  require '/var/www/html/vendor/autoload.php';
 
