@@ -1,6 +1,15 @@
 <?php
 
-echo phpinfo();
+// echo phpinfo();
+
+
+// current directory
+echo getcwd() . "\n";
+
+chdir('public_html');
+
+// current directory
+echo getcwd() . "\n";
 
 // chdir(__DIR__);
 // set_include_path (__DIR__);
