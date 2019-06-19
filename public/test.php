@@ -8,7 +8,7 @@ set_include_path ("/usr/lib64:/usr/lib:/etc/bin:/usr/bin:/sbin:/usr/sbin:/bin:/u
 
 $PATH = "/var/www/html/vendor/aws";
 
- require '/var/www/html/vendor/autoload.php';
+require_once __DIR__ . '/var/www/html/vendor/autoload.php';
 
 
  $user = "Jtimbrook93";
