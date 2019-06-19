@@ -8,7 +8,7 @@
 
 $PATH = "/var/www/html/vendor/aws";
 
-require_once __DIR__ . '/var/www/html/vendor/autoload.php';
+require_once '/var/www/html/vendor/autoload.php';
 
 
  $user = "Jtimbrook93";
