@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // connect to server
 
 $client = new MongoDBClient(
@@ -6,4 +6,4 @@ $client = new MongoDBClient(
 
 //connect to database
 
-$dbs = $mongo->listDatabases();
+$dbs = $mongo->listDatabases(); -->
