@@ -15,7 +15,7 @@ require_once '/var/www/html/vendor/autoload.php';
  $pwd = 'Biggi1%21yo';
 
  try {
-    $connection = new MongoDB\Driver\Manager('mongodb+srv://${user}:${pwd}@iot-sjtus.mongodb.net/JT?retryWrites=true&w=majority');
+    $connection = new MongoDB\Driver\Manager('mongodb+srv://${user}:${pwd}@iot-sjtus.mongodb.net/JT');
     $db = $connection->JT;
     $collection = $db->IOT;
     var_dump($collection);
